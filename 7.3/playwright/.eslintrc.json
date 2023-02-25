@@ -1,0 +1,17 @@
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": "off",
+    "semi": ["error", "always"], 
+    "quotes": ["error", "double"], 
+    "indent": ["error", 2], 
+    "camelcase": ["error", {"properties": "always"}] 
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "script"
+},
+"env": {
+    "node": true
+  }
+}
