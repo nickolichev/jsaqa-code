@@ -4,11 +4,16 @@
   "description": "first tests with Cypress",
   "main": "index.js",
   "scripts": {
+    "ChromeHeaded": "npx cypress run --browser chrome --headed",
+    "ChromeHeadless": "npx cypress run --browser chrome --headless --config-file cypress.env.js",
+    "ElectronHeaded": "npx cypress run --browser electron --headed",
+    "ElectronHeadless": "npx cypress run --browser electron --headless --config-file cypress.env.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "OM",
   "license": "ISC",
+  "keywords": [],
   "dependencies": {
-    "cypress": "^8.3.0"
+    "cypress": "^12.8.1"
   }
 }
