@@ -15,5 +15,9 @@
   "keywords": [],
   "dependencies": {
     "cypress": "^12.8.1"
+  },
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1",
+    "cypress-wait-until": "^1.7.2"
   }
 }
