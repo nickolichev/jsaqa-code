@@ -1,0 +1,16 @@
+{
+  "valid": {
+    "login": "qamid@qamid.ru",
+    "password": "qamid"
+  },
+
+  "invalid": {
+    "login": "xxxxx@qamid.ru",
+    "password": "12345"
+  },
+
+  "empty": {
+    "login": " ",
+    "password": " "
+  }
+}

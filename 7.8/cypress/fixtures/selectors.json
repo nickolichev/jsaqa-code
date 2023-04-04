@@ -1,0 +1,37 @@
+{
+  "admin": {
+    "urlAdmin": "https://qamid.tmweb.ru/admin/index.php",
+    "email": "input[name='email']",
+    "password": "input[name='password']",
+    "buttonLoginIn": ".login__button",
+    "authorisationError": "Ошибка авторизации!",
+    "successfulLogin": "Управление залами",
+    "saleOpen": "Продажа билетов открыта!!!",
+    "startSales": "#start-sales",
+    "halls": ".conf-step__radio",
+    "selectorTicketSalesOpen": "div.conf-step__wrapper.text-center > p"
+  },
+
+  "movi": {
+    "urlSessions": "https://qamid.tmweb.ru/",
+    "title": ".page-header__title",
+    "today": ".page-nav__day_today",
+    "days": ".page-nav__day",
+    "poster": ".movie__title",
+    "halls": ".movie-seances__hall-title",
+    "dateChosen": "page-nav__day.page-nav__day_chosen",
+    "selectedHall": "section:nth-child(3) > div.movie-seances__hall",
+    "timeSession": "section:nth-child(3) > div.movie-seances__hall > ul > li > a",
+    "allInformationAboutMovi": "section:nth-child(3)",
+    "noSession": ".acceptin-button-disabled",
+    "haveSession": "section:nth-child(3) > div.movie-seances__hall > ul > li > a",
+    "rowSeat": "div > div > div:nth-child({row}) > span:nth-child({seat})",
+    "infoHall": ".buying__info-hall",
+    "bookDisabled": "button",
+    "bookEnable": ".acceptin-button",
+    "selectedSeat": ".buying-scheme__chair_selected",
+    "order": "Вы выбрали билеты:",
+    "ticketDetails": "p:nth-child(2) > span",
+    "bookingButton": "button"
+  }
+}
