@@ -1,6 +1,16 @@
 [
-    { "row": 1, "seat": 1 },
-    { "row": 1, "seat": 2 },
-    { "row": 1, "seat": 3 }
-   ]
-   
+  {
+    "seats": [
+      { "row": 5, "seat": 7 },
+      { "row": 6, "seat": 7 },
+      { "row": 7, "seat": 7 }
+    ]
+  },
+  {
+    "seats": [
+      { "row": 9, "seat": 5 },
+      { "row": 9, "seat": 6 },
+      { "row": 9, "seat": 7 }
+    ]
+  }
+]
