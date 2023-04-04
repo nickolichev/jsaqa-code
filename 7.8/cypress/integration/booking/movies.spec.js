@@ -1,6 +1,6 @@
-import data from "../fixtures/seats.json";
-import admin from "../fixtures/admin.json";
-import selectors from "../fixtures/selectors.json";
+import data from "../../fixtures/seats.json";
+import admin from "../../fixtures/admin.json";
+import selectors from "../../fixtures/selectors.json";
 
 // describe("Тестируем отображение главной страницы", () => {
 //   beforeEach(() => {

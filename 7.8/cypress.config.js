@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: "os1hp1",
+  projectId: "5cwwaf",
   retries: 1,
   e2e: {
     // We've imported your old cypress plugins here.
