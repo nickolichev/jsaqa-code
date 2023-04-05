@@ -4,7 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:admin:chrome": "cypress run --record --group admin --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/admin/invalid_admin.spec.js,/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/admin/valid_admin.spec.js' --browser chrome",
+    "test:booking:chrome": "cypress run --record --group booking --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/booking/movies.spec.js' --browser chrome",
+    "test:movies:chrome": "cypress run --record --group movies --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/movies/main.spec.js' --browser chrome",
+    "test:parallel:chrome": "npm run test:admin:chrome & npm run test:booking:chrome & npm run test:movies:chrome",
+     "test:admin:electron": "cypress run --record --group admin --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/admin/invalid_admin.spec.js,/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/admin/valid_admin.spec.js' --browser electron",
+    "test:booking:electron": "cypress run --record --group booking --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/booking/movies.spec.js' --browser electron",
+    "test:movies:electron": "cypress run --record --group movies --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/movies/main.spec.js' --browser electron",
+    "test:parallel:electron": "npm run test:admin:electron & npm run test:booking:electron & npm run test:movies:electron",
+    "test:admin:firefox": "cypress run --record --group admin --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/admin/invalid_admin.spec.js,/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/admin/valid_admin.spec.js' --browser firefox",
+    "test:booking:firefox": "cypress run --record --group booking --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/booking/movies.spec.js' --browser firefox",
+    "test:movies:firefox": "cypress run --record --group movies --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/movies/main.spec.js' --browser firefox",
+    "test:parallel:firefox": "npm run test:admin:firefox & npm run test:booking:firefox & npm run test:movies:firefox",
+
+    "test:first:browser": "cypress run --record --group invalid --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/admin/invalid_admin.spec.js' --browser firefox",
+    "test:second:browser": "cypress run --record --group admin --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/admin/valid_admin.spec.js' --browser electron",
+    "test:third:browser": "cypress run --record --group movies --spec '/Users/Web interface testing automation/jsaqa-code/7.8/cypress/integration/movies/main.spec.js' --browser chrome",
+    "test:parallel:all": "npm run test:first:browser & npm run test:second:browser & npm run test:third:browser"
   },
   "author": "",
   "license": "ISC",
